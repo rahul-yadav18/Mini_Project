@@ -8,6 +8,11 @@ import Contact from "./pages/Contact";
 import MyProfile from "./pages/MyProfile";
 import MyAppointments from "./pages/MyAppointments";
 import Appointment from "./pages/Appointment";
+
+import VideoCall from "./pages/VideoCall";
+import Chatbot from "./pages/Chatbot";
+import ChatbotWidget from "./components/ChatbotWidget";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ToastContainer, toast } from "react-toastify";
@@ -28,8 +33,10 @@ const App = () => {
         <Route path="/my-profile" element={<MyProfile />} />
         <Route path="/my-appointments" element={<MyAppointments />} />
         <Route path="/appointment/:docId" element={<Appointment />} />
+        <Route path="/video-call/:appointmentId" element={<VideoCall />} />
+        <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
-      <Footer />
+      <Footer /> <ChatbotWidget />  {/* ✅ must be here — outside Routes */}
     </div>
   );
 };

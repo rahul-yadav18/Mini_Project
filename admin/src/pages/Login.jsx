@@ -14,6 +14,7 @@ const Login = () => {
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
+    // console.log("SUBMIT WORKING"); // 👈 add this
 
     try {
       if (state === "Admin") {
@@ -70,7 +71,7 @@ const Login = () => {
             required
           />
         </div>
-        <button className="bg-primary text-white w-full px-4 py-2 rounded-md text-base">
+        <button  type="submit" className="bg-primary text-white w-full px-4 py-2 rounded-md text-base">
           Login
         </button>
         {state === "Admin" ? (
