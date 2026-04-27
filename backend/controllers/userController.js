@@ -215,7 +215,7 @@ const chatbot = async (req, res) => {
     const apiMessages = [
       {
         role: "system",
-        content: `You are a helpful health assistant for a medical appointment booking platform called Prescripto.
+        content: `You are a helpful health assistant for a medical appointment booking platform called MediConnect.
 
 Your role is to:
 1. Answer ONLY health-related questions — physical symptoms, mental health, medications, nutrition, fitness, wellness
