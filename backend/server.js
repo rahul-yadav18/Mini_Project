@@ -26,7 +26,8 @@ const io = new Server(httpServer, {
     origin: [
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://mini-project-black-one.vercel.app"
+      "https://mini-project-black-one.vercel.app",
+        "https://mini-project-j3qaop2u1-rahul-yadav18s-projects.vercel.app"
     ],
     methods: ["GET", "POST"]
   },
@@ -53,7 +54,9 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "http://localhost:5174",
-    "https://mini-project-black-one.vercel.app"
+    "https://mini-project-black-one.vercel.app",
+    //added after that
+    "https://mini-project-j3qaop2u1-rahul-yadav18s-projects.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
