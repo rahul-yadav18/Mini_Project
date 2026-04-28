@@ -40,7 +40,7 @@ const AddDoctor = () => {
       formData.append("degree", degree);
       formData.append(
         "address",
-        JSON.stringify({ line1: address1, line2: address2 })
+        JSON.stringify({ line1: address1, line2: address2 }),
       );
 
       // console log formdata
@@ -51,7 +51,7 @@ const AddDoctor = () => {
       const { data } = await axios.post(
         backendUrl + "/api/admin/add-doctor",
         formData,
-        { headers: { aToken } }
+        { headers: { aToken } },
       );
 
       if (data.success) {
@@ -180,12 +180,23 @@ const AddDoctor = () => {
                 name=""
                 id=""
               >
-                <option value="General physician">General physician</option>
+                {/* <option value="General physician">General physician</option>
                 <option value="Gynecologist">Gynecologist</option>
                 <option value="Dermatologist">Dermatologist</option>
                 <option value="Pediatricians">Pediatricians</option>
                 <option value="Neurologist">Neurologist</option>
-                <option value="Gastroenterologist">Gastroenterologist</option>
+                <option value="Gastroenterologist">Gastroenterologist</option> */}
+
+                <option value="Psychiatrist">Psychiatrist</option>
+                <option value="Psychologist">Psychologist</option>
+                <option value="Clinical Psychologist">
+                  Clinical Psychologist
+                </option>
+                <option value="Therapist">Therapist</option>
+                <option value="Counselor">Counselor</option>
+                <option value="Mental Health Specialist">
+                  Mental Health Specialist
+                </option>
               </select>
             </div>
 
