@@ -8,7 +8,7 @@ The system provides dedicated dashboards for Patients, Doctors, and Administrato
 
 ---
 
-## Key Features
+## Features
 
 ### Patient Module
 
@@ -16,18 +16,18 @@ The system provides dedicated dashboards for Patients, Doctors, and Administrato
 * Secure JWT-Based Authentication
 * Browse Doctors by Specialization
 * Book Appointments Online
-* Manage Personal Profile
 * View Appointment History
+* Manage User Profile
 * Attend Video Consultations
 * Access Mental Health Support Chatbot
 
 ### Doctor Module
 
-* Doctor Login and Dashboard
-* Manage Doctor Profile
+* Doctor Dashboard
+* Manage Profile Information
 * View Scheduled Appointments
 * Update Availability
-* Conduct Online Video Consultations
+* Conduct Online Consultations
 * Manage Patient Interactions
 
 ### Admin Module
@@ -44,7 +44,7 @@ The system provides dedicated dashboards for Patients, Doctors, and Administrato
 
 The platform integrates an AI-powered mental health chatbot developed using Python Flask and Groq API.
 
-### Features
+### Chatbot Features
 
 * Conversational Mental Health Assistance
 * Friendly and Empathetic Responses
@@ -101,11 +101,11 @@ MediConnect provides real-time doctor-patient video consultations using WebRTC t
 * Axios
 * Tailwind CSS
 
-### Main Backend
+### Backend
 
 * Node.js
 * Express.js
-* REST APIs
+* REST API Development
 * JWT Authentication
 
 ### AI Chatbot Backend
@@ -135,7 +135,7 @@ MediConnect provides real-time doctor-patient video consultations using WebRTC t
 ### Authentication & Authorization
 
 * User Registration
-* Secure Login and Logout
+* Login and Logout
 * JWT-Based Authentication
 * Role-Based Access Control
 
@@ -186,6 +186,90 @@ The application uses MongoDB collections for:
 
 ---
 
+## Installation & Setup
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+### Frontend (Clientside)
+
+```bash
+cd clientside
+npm install
+npm run dev
+```
+
+### Admin Panel
+
+```bash
+cd admin
+npm install
+npm run dev
+```
+
+### Mental Health Chatbot
+
+```bash
+cd chatbot
+pip install -r requirements.txt
+python chatbot_api.py
+```
+
+---
+
+## Environment Variables
+
+### Backend (.env)
+
+```env
+MONGODB_URI=
+JWT_SECRET=
+PORT=
+
+ADMIN_EMAIL=
+ADMIN_PASSWORD=
+
+CLOUDINARY_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_SECRET_KEY=
+```
+
+### Client (.env)
+
+```env
+VITE_BACKEND_URL=http://localhost:4000
+```
+
+### Admin (.env)
+
+```env
+VITE_BACKEND_URL=http://localhost:4000
+```
+
+### Chatbot (.env)
+
+```env
+GROQ_API_KEY=
+```
+
+---
+
+## Local URLs
+
+| Service                   | URL                   |
+| ------------------------- | --------------------- |
+| Client Application        | http://localhost:5173 |
+| Admin Dashboard           | http://localhost:5174 |
+| Backend API               | http://localhost:4000 |
+| Mental Health Chatbot API | http://localhost:8000 |
+
+---
+
 ## Future Enhancements
 
 * Online Payment Gateway Integration
@@ -215,12 +299,12 @@ The application uses MongoDB collections for:
 
 ---
 
-## Author
+## Authors
 
-Rahul Yadav
-Radhika Sikarwar
-Raj Gupta 
+* Rahul Yadav
+* Radhika Sikarwar
+* Raj Gupta
 
 ### Project Title
 
-MediConnect – MENTAL HEALTH HELP SYSTEM 
+**MediConnect – Smart Healthcare Appointment, Video Consultation & Mental Health Support Platform**
