@@ -218,7 +218,9 @@ The application uses MongoDB collections for:
 ## Author
 
 Rahul Yadav
+Radhika Sikarwar
+Raj Gupta 
 
 ### Project Title
 
-MediConnect – Smart Healthcare Appointment, Video Consultation & Mental Health Support Platform
+MediConnect – MENTAL HEALTH HELP SYSTEM 
