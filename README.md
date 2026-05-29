@@ -212,15 +212,7 @@ npm install
 npm run dev
 ```
 
-### Mental Health Chatbot
 
-```bash
-cd chatbot
-pip install -r requirements.txt
-python chatbot_api.py
-```
-
----
 
 ## Environment Variables
 
@@ -265,8 +257,6 @@ GROQ_API_KEY=
 | ------------------------- | --------------------- |
 | Client Application        | http://localhost:5173 |
 | Admin Dashboard           | http://localhost:5174 |
-| Backend API               | http://localhost:4000 |
-| Mental Health Chatbot API | http://localhost:8000 |
 
 ---
 
